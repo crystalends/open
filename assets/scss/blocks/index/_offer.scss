@@ -1,0 +1,17 @@
+.offer {
+  background-color: map-get($colors, "white");
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+
+  & > h4 {
+    font-family: "Geometria", sans-serif;
+    font-size: 20px;
+
+    @media (max-width: 1500px) {
+      font-size: 18px;
+    }
+  }
+}

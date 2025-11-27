@@ -1,0 +1,23 @@
+.eph {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+
+  @media (max-width: 1500px) {
+    display: none;
+  }
+
+  & > a {
+    text-wrap: nowrap;
+    text-align: center;
+    font-family: "Geometria", sans-serif;
+    font-weight: 600;
+    font-size: 14px;
+    color: map-get($colors, "white");
+    transition: 0.2s ease-in-out;
+
+    &:hover {
+      color: map-get($colors, "dark-orange");
+    }
+  }
+}

@@ -1,0 +1,18 @@
+{
+  "name": "open",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss": "sass assets/scss/main.scss dist/style.css --no-source-map --style=expanded",
+    "scss:watch": "sass --watch assets/scss/main.scss:dist/style.css --style=expanded"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "commonjs",
+  "devDependencies": {
+    "sass": "^1.94.2"
+  }
+}

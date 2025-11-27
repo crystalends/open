@@ -1,0 +1,40 @@
+.how-it-work {
+  &__content {
+    padding: 84px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+
+    @media (max-width: 1500px) {
+      padding: 40px 0;
+      gap: 28px;
+    }
+
+    & > h2 {
+      font-family: "Geometria", sans-serif;
+      font-weight: 500;
+      font-size: 40px;
+      text-align: center;
+      color: map-get($colors, "so-dark-orange");
+
+      @media (max-width: 1500px) {
+        font-size: 24px;
+      }
+    }
+  }
+
+  &__grid {
+    display: grid;
+    gap: 20px;
+    grid-template-columns: repeat(3, 1fr);
+
+    @media (max-width: 1500px) {
+      grid-template-columns: repeat(2, 1fr);
+    }
+
+    @media (max-width: 480px) {
+      display: flex;
+      overflow: auto;
+    }
+  }
+}

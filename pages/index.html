@@ -1,0 +1,619 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="../dist/style.css" />
+  </head>
+  <body>
+    <header class="header">
+      <div class="header__left">
+        <div class="header__start">
+          <button class="header__menu-toggle">
+            <svg
+              width="37"
+              height="37"
+              viewBox="0 0 37 37"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+              xmlns:xlink="http://www.w3.org/1999/xlink"
+            >
+              <rect width="37" height="37" fill="url(#pattern0_1343_82)" />
+              <defs>
+                <pattern
+                  id="pattern0_1343_82"
+                  patternContentUnits="objectBoundingBox"
+                  width="1"
+                  height="1"
+                >
+                  <use xlink:href="#image0_1343_82" transform="scale(0.01)" />
+                </pattern>
+                <image
+                  id="image0_1343_82"
+                  width="100"
+                  height="100"
+                  preserveAspectRatio="none"
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAyklEQVR4nO3awQnCQBiE0SXDdqHowZulp5jFihRbMB6G8B58DWRO4d8xAAAAAAAAAICfvB7jsq7zqXm477ccR63btq973srxbttukHtRBklXBklXBklXBklXBklXBsn5BvFjOLt+DAEAAAAAgL9zD5ld9xAXw3RdDA0Sg6yzZpB0ZZB0ZZB0ZZB0ZZB05aHcrMpDOQAAAAAA6OQeMrvuIS6G6boYGiQGWWfNIOnKIOnKIOnKIOnKIOnKQ7lZlYdyAAAAAAAAADB+9gFJpmlcNmfLDwAAAABJRU5ErkJggg=="
+                />
+              </defs>
+            </svg>
+          </button>
+          <a href="">
+            <svg
+              width="90"
+              height="35.39"
+              viewBox="0 0 58 23"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M15.66 6.27899C15.8588 2.77292 18.8383 3.10947e-06 22.4831 3.10947e-06C26.2668 3.10947e-06 29.3258 2.9756 29.3258 6.65567C29.3258 10.3266 26.2668 13.3113 22.4831 13.3113C21.5088 13.3146 20.5448 13.1115 19.6546 12.7153C18.7645 12.3191 17.9683 11.7389 17.3185 11.0128V16.9438H15.6405V6.27899H15.66ZM22.4831 1.65203C19.6431 1.65203 17.3387 3.89317 17.3387 6.65567C17.3387 9.41881 19.6431 11.66 22.4831 11.66C25.3232 11.66 27.6276 9.41816 27.6276 6.65567C27.6276 3.89252 25.3232 1.65203 22.4831 1.65203ZM43.7385 9.61367C42.7349 11.8776 40.5505 13.4964 37.9581 13.6756H37.9385C37.7899 13.6854 37.6407 13.6854 37.4823 13.6854C36.538 13.6854 35.6348 13.4964 34.8104 13.1491L34.8007 13.1393C34.7609 13.1295 34.7309 13.1093 34.6912 13.0995C32.2975 12.0269 30.6292 9.63322 30.6292 6.8427C30.6284 5.94386 30.8048 5.05368 31.1483 4.2231C31.4919 3.39252 31.9959 2.63784 32.6315 2.00227C33.2671 1.3667 34.0217 0.8627 34.8523 0.519126C35.6829 0.175552 36.5731 -0.000854151 37.4719 3.10947e-06C41.2458 3.10947e-06 44.3146 3.05901 44.3146 6.8427C44.3146 7.01214 44.3048 7.19005 44.2951 7.35883L44.2651 7.65731C40.312 7.65731 36.3497 7.64688 32.3868 7.64688C32.6253 9.19659 33.5592 10.4974 34.8404 11.2624C34.9193 11.312 34.9988 11.3615 35.0783 11.4012L35.1382 11.4312H35.148C35.8674 11.7987 36.6641 11.9893 37.4719 11.9871H37.6309L37.8988 11.9773C39.8056 11.8281 41.4244 10.6264 42.1797 8.95807L43.7385 9.61367ZM42.5466 5.97856C42.3413 4.78126 41.7194 3.69506 40.7908 2.91184C39.8622 2.12862 38.6867 1.6988 37.4719 1.6983C34.9499 1.6983 32.8039 3.52562 32.3972 5.97856H42.5466ZM48.5232 3.10947e-06L56.4079 10.4113V3.10947e-06H58V13.0337H56.4079V13.0239L48.5225 2.62304V13.0337H46.9214V3.10947e-06H48.5232ZM23.1674 21.3362C20.5662 22.3117 17.8105 22.8106 15.0324 22.809C12.2204 22.809 9.43706 22.302 6.81011 21.3069L6.51686 21.1896L7.14247 19.5506L7.43508 19.6679C9.86325 20.584 12.4372 21.0532 15.0324 21.0527C17.6014 21.0527 20.1501 20.5946 22.5529 19.6874L22.8455 19.5799L23.4607 21.2189L23.1674 21.3362ZM6.8427 3.10947e-06C10.6166 3.10947e-06 13.6854 3.05901 13.6854 6.8427C13.6854 10.6166 10.6166 13.6854 6.8427 13.6854C3.05901 13.6854 3.10947e-06 10.6166 3.10947e-06 6.8427C-0.000854151 5.94386 0.175552 5.05368 0.519126 4.2231C0.8627 3.39252 1.3667 2.63784 2.00227 2.00227C2.63784 1.3667 3.39252 0.8627 4.2231 0.519126C5.05368 0.175552 5.94386 -0.000854151 6.8427 3.10947e-06ZM6.8427 1.6983C5.47842 1.69864 4.17013 2.24075 3.20544 3.20544C2.24075 4.17013 1.69864 5.47842 1.6983 6.8427C1.69864 8.20697 2.24075 9.51527 3.20544 10.48C4.17013 11.4446 5.47842 11.9868 6.8427 11.9871C8.20697 11.9868 9.51527 11.4446 10.48 10.48C11.4446 9.51527 11.9868 8.20697 11.9871 6.8427C11.9868 5.47842 11.4446 4.17013 10.48 3.20544C9.51527 2.24075 8.20697 1.69864 6.8427 1.6983Z"
+                fill="white"
+              />
+            </svg>
+          </a>
+        </div>
+        <div class="lang">
+          <a class="lang__link text-white" href="">ENG</a>
+          <a class="lang__link text-white lang__link--active" href="">RUS</a>
+        </div>
+      </div>
+      <div class="header__nav">
+        <a href="">Услуги</a>
+        <a href="">IT продукты</a>
+        <a href="">О компании</a>
+        <a href="">Карьера</a>
+        <a href="">Пресс-центр</a>
+        <a href="">Контакты</a>
+      </div>
+      <div class="header__right">
+        <div class="eph">
+          <a href="tel:+78005339833"
+            >Телефон горячей линии:<br />+7 (800) 533 98 33</a
+          >
+        </div>
+        <div class="eph">
+          <a href="tel:+74996490080">+7 (499) 649 00 80</a>
+          <a href="mailto:info@open-com.ru">info@open-com.ru</a>
+        </div>
+        <button class="search__trigger">
+          <svg
+            xmlns="http://www.w3.org/2000/svg"
+            width="18"
+            height="18"
+            viewBox="0 0 18 18"
+          >
+            <g fill="none" fill-rule="evenodd">
+              <path
+                fill="#FFF"
+                fill-rule="nonzero"
+                d="M12.5 11h-.79l-.28-.27A6.471 6.471 0 0 0 13 6.5 6.5 6.5 0 1 0 6.5 13c1.61 0 3.09-.59 4.23-1.57l.27.28v.79l5 4.99L17.49 16l-4.99-5zm-6 0C4.01 11 2 8.99 2 6.5S4.01 2 6.5 2 11 4.01 11 6.5 8.99 11 6.5 11z"
+              />
+              <path d="M-5-3h24v24H-5z" />
+            </g>
+          </svg>
+        </button>
+      </div>
+    </header>
+    <main>
+      <section class="intro">
+        <div class="container">
+          <div class="intro__content">
+            <div class="intro__text-wrapper">
+              <div class="intro__text">
+                <h2>Аутсорсинг кадрово-административной функции (КАФ)</h2>
+                <p>
+                  Доверьте все задачи по кадровому учёту и администрированию
+                  экспертам OPEN Group — экономьте время и ресурсы,
+                  а мы обеспечим надёжность и прозрачность процессов
+                </p>
+              </div>
+              <button class="button">Оставить заявку</button>
+            </div>
+            <ul class="facts">
+              <li>20+ лет успешной работы</li>
+              <li>Cнижение затрат и рисков</li>
+              <li>Прозрачность и надежность</li>
+              <li>Персональные решения</li>
+            </ul>
+          </div>
+        </div>
+      </section>
+      <section class="what-this">
+        <div class="container">
+          <div class="what-this__content">
+            <div class="breadcrumbs">
+              <a href="">Главная</a>
+              <a href="">Услуги</a>
+              <a href="">Аутсорсинг кадрово-административной функции</a>
+            </div>
+            <div class="what-this__text-wrapper">
+              <h3>Что это такое?</h3>
+              <div class="what-this__blocks-wrapper">
+                <div class="what-this__outsourcing">
+                  <h4>
+                    Аутсорсинг кадрово‑административных функций — это передача
+                    всех задач, связанных с управлением персоналом:
+                  </h4>
+                  <ul>
+                    <li>подбор и оформление сотрудников,</li>
+                    <li>сопровождение персонала,</li>
+                    <li>расчет заработной платы,</li>
+                    <li>учет рабочего времени,</li>
+                    <li>подготовка отчетности,</li>
+                    <li>контроль соблюдения трудового законодательства.</li>
+                  </ul>
+                </div>
+                <div class="what-this__main-tasks">
+                  <h4>Основные задачи кадрового сопровождения:</h4>
+                  <div class="what-this__main-tasks-container">
+                    <div class="task">
+                      <span class="task__number">1</span>
+                      <p class="task__text">Подбор и оформление сотрудников</p>
+                    </div>
+                    <div class="task">
+                      <span class="task__number">2</span>
+                      <p class="task__text">Сопровождение персонала</p>
+                    </div>
+                    <div class="task">
+                      <span class="task__number">3</span>
+                      <p class="task__text">Учет рабочего времени</p>
+                    </div>
+                    <div class="task">
+                      <span class="task__number">4</span>
+                      <p class="task__text">Подготовка отчетности</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="what-this__peculiarities">
+                  <h4>Особенности и преимущества аутсорсинга</h4>
+                  <ul class="what-this__peculiarities-container">
+                    <li>
+                      <span>Снижение административной нагрузки: </span
+                      >освобождение внутренних сотрудников для решения
+                      стратегических задач.
+                    </li>
+                    <li>
+                      <span>Скорость и качество исполнения: </span>профессионалы
+                      быстро внедряют необходимые процессы согласно стандартам.
+                    </li>
+                    <li>
+                      <span>Оптимизация затрат: </span>компания не несёт затрат
+                      на налоги, отпускные и создание рабочих мест
+                      для дополнительного персонала.
+                    </li>
+                    <li>
+                      <span>Инновационный подход: </span>современные технологии
+                      автоматизируют рутинные процессы и минимизируют ошибки —
+                      важно для растущего бизнеса.
+                    </li>
+                    <li>
+                      <span>Гибкость: </span>услуги легко масштабируются под
+                      текущие потребности компании.
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="caf">
+        <div class="container">
+          <div class="caf__content">
+            <div class="caf__text-wrapper">
+              <h2>КАФ от OPEN это</h2>
+              <div class="caf__grid">
+                <div class="caf-grid-item">
+                  <div class="caf-grid-item__start">
+                    <span class="caf-grid-item__label-start">на</span>
+                    <span class="caf-grid-item__percent">30%</span>
+                  </div>
+                  <p class="caf-grid-item__description">
+                    выше скорость подбора
+                  </p>
+                </div>
+                <div class="caf-grid-item">
+                  <div class="caf-grid-item__start">
+                    <span class="caf-grid-item__label-start">на</span>
+                    <span class="caf-grid-item__percent">15%</span>
+                  </div>
+                  <p class="caf-grid-item__description">ниже текучесть</p>
+                </div>
+                <div class="caf-grid-item">
+                  <div class="caf-grid-item__start">
+                    <span class="caf-grid-item__label-start">до</span>
+                    <span class="caf-grid-item__percent">11%</span>
+                  </div>
+                  <p class="caf-grid-item__description">
+                    выше производительность бухгалтерии и юридической службы
+                  </p>
+                </div>
+                <div class="caf-grid-item">
+                  <div class="caf-grid-item__start">
+                    <span class="caf-grid-item__label-start">на</span>
+                    <span class="caf-grid-item__percent">10%</span>
+                  </div>
+                  <p class="caf-grid-item__description">выше скорость КПД</p>
+                </div>
+                <div class="caf-grid-item">
+                  <div class="caf-grid-item__start">
+                    <span class="caf-grid-item__label-start">до</span>
+                    <span class="caf-grid-item__percent">2x</span>
+                  </div>
+                  <p class="caf-grid-item__description">
+                    раз быcтрее скорость увольнения
+                  </p>
+                </div>
+                <div class="caf-grid-item">
+                  <div class="caf-grid-item__start">
+                    <span class="caf-grid-item__label-start">до</span>
+                    <span
+                      class="caf-grid-item__percent caf-grid-item__percent--danger"
+                      >+3,5%</span
+                    >
+                  </div>
+                  <p class="caf-grid-item__description">
+                    повышение эффективности работы полевой команды
+                  </p>
+                </div>
+              </div>
+            </div>
+            <button class="button button--full-width">Оставить заявку</button>
+          </div>
+        </div>
+      </section>
+      <section class="how-it-work">
+        <div class="container">
+          <div class="how-it-work__content">
+            <h2>Как это работает?</h2>
+            <div class="how-it-work__grid">
+              <div class="how-it-work-card">
+                <div class="how-it-work-card__header">
+                  <div class="how-it-work-card__index-circles">
+                    <span></span>
+                  </div>
+                  <span class="how-it-work-card__index">(01)</span>
+                </div>
+                <div class="how-it-work-card__text-wrapper">
+                  <h3>Анализ потребностей</h3>
+                  <p>Обсуждаем задачи, цели и лучшие каналы связи</p>
+                </div>
+              </div>
+              <div class="how-it-work-card">
+                <div class="how-it-work-card__header">
+                  <div class="how-it-work-card__index-circles">
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <span class="how-it-work-card__index">(02)</span>
+                </div>
+                <div class="how-it-work-card__text-wrapper">
+                  <h3>Подключение и настройка</h3>
+                  <p>Настраиваем все процессы и HR-портал под ваши запросы</p>
+                </div>
+              </div>
+              <div class="how-it-work-card">
+                <div class="how-it-work-card__header">
+                  <div class="how-it-work-card__index-circles">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <span class="how-it-work-card__index">(03)</span>
+                </div>
+                <div class="how-it-work-card__text-wrapper">
+                  <h3>Запуск и поддержка</h3>
+                  <p>Берём на себя документооборот, заявки и обратную связь</p>
+                </div>
+              </div>
+              <div class="how-it-work-card">
+                <div class="how-it-work-card__header">
+                  <div class="how-it-work-card__index-circles">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <span class="how-it-work-card__index">(04)</span>
+                </div>
+                <div class="how-it-work-card__text-wrapper">
+                  <h3>Отчётность и аналитика</h3>
+                  <p>
+                    Регулярно предоставляем полный отчёт по всем процессам и
+                    персоналу
+                  </p>
+                </div>
+              </div>
+              <div class="how-it-work-card">
+                <div class="how-it-work-card__header">
+                  <div class="how-it-work-card__index-circles">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                  <span class="how-it-work-card__index">(05)</span>
+                </div>
+                <div class="how-it-work-card__text-wrapper">
+                  <h3>Улучшения и рост</h3>
+                  <p>
+                    Проводим ежемесячную оценку качества и дорабатываем сервис
+                    под ваши пожелания
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="benefits">
+        <div class="container">
+          <div class="benefits__content">
+            <h2>Мы будем полезны, если</h2>
+            <div class="benefits__grid">
+              <div class="benefit">
+                <span class="benefit__index">1</span>
+                <div class="benefit__text-wrapper">
+                  <h3>
+                    Работаете в FMCG, Telecom, Banking, CE, DIY, Fashion, Beauty
+                    или других индустриях
+                  </h3>
+                </div>
+              </div>
+              <div class="benefit">
+                <span>2</span>
+                <div class="benefit__text-wrapper">
+                  <h3>Нужно управлять расходами</h3>
+                  <p>
+                    Оптимизируйте затраты — без лишнего HR-штата или бухгалтерии
+                  </p>
+                </div>
+              </div>
+              <div class="benefit">
+                <span>3</span>
+                <div class="benefit__text-wrapper">
+                  <h3>Нет времени у HR или бухгалтера</h3>
+                  <p>Высвободите ресурсы для решения ключевых задач бизнеса</p>
+                </div>
+              </div>
+              <div class="benefit">
+                <span>4</span>
+                <div class="benefit__text-wrapper">
+                  <h3>В штате нет профильных специалистов</h3>
+                  <p>Все вопросы кадрового учета — профессионалам!</p>
+                </div>
+              </div>
+              <div class="benefit">
+                <span>5</span>
+                <div class="benefit__text-wrapper">
+                  <h3>Не налажена система оформления персонала</h3>
+                  <p>
+                    Организуем прозрачный процесс приема и увольнения
+                    сотрудников
+                  </p>
+                </div>
+              </div>
+              <div class="benefit">
+                <span>6</span>
+                <div class="benefit__text-wrapper">
+                  <h3>Небольшой штат — мало кадровых задач</h3>
+                  <p>Не тратьте бюджет на отдельную штатную единицу</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="profits">
+        <div class="container">
+          <div class="profits__content">
+            <div class="profits__text-wrapper">
+              <h2>Ваши выгоды с OPEN Group</h2>
+              <p>
+                Все, что нужно для эффективного управления кадрами — в одном
+                решении
+              </p>
+            </div>
+            <div class="profits__grid">
+              <div class="profit">
+                <div class="profit__header">
+                  <img src="../assets/images/Получает клиент.png" />
+                  <h3>Экономия ресурсов:</h3>
+                </div>
+                <ul>
+                  <li>
+                    Берём на себя подбор, оформление, ведение документации и
+                    начисление зарплаты.
+                  </li>
+                  <li>Снижаем расходы на администрирование до 50%.</li>
+                </ul>
+              </div>
+              <div class="profit">
+                <div class="profit__header">
+                  <img src="../assets/images/Mask group.png" />
+                  <h3>Удобные цифровые решения:</h3>
+                </div>
+                <ul>
+                  <li>
+                    Современная система коммуникации и электронного
+                    документооборота.
+                  </li>
+                  <li>Быстрое и понятное взаимодействие всех сотрудников.</li>
+                </ul>
+              </div>
+              <div class="profit">
+                <div class="profit__header">
+                  <img src="../assets/images/Mask group (1).png" />
+                  <h3>Прозрачная и наглядная аналитика:</h3>
+                </div>
+                <ul>
+                  <li>
+                    Всегда актуальные данные о персонале, отчётах и процессах.
+                  </li>
+                  <li>
+                    Честная аналитика для принятия управленческих решений.
+                  </li>
+                </ul>
+              </div>
+              <div class="profits__bid profits__bid--mobile">
+                <p>
+                  Оставьте заявку — аутсорсинг кадрового учёта от OPEN Group это
+                  просто, выгодно и надёжно!
+                </p>
+                <button class="button button--small">Оставить заявку</button>
+              </div>
+            </div>
+            <div class="profits__bid">
+              <p>
+                Оставьте заявку — аутсорсинг кадрового учёта от OPEN Group это
+                просто, выгодно и надёжно!
+              </p>
+              <button class="button button--small">Оставить заявку</button>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="principles">
+        <div class="container">
+          <div class="principles__content">
+            <div class="principles__text-wrapper">
+              <h2>Принципы работы и миссия компании</h2>
+              <p>Создаём возможности для тех, кто стремится к большему</p>
+            </div>
+            <div class="principles__grid">
+              <div
+                class="how-it-work-card how-it-work-card--full-width how-it-work-card--filled"
+              >
+                <div class="how-it-work-card__header">
+                  <span class="how-it-work-card__index">(01)</span>
+                  <div class="how-it-work-card__index-circles">
+                    <span></span>
+                  </div>
+                </div>
+                <div class="how-it-work-card__text-wrapper">
+                  <h3>Комплексность</h3>
+                  <p>
+                    Оптимизируем бизнес-процессы за счёт широкого портфеля
+                    решений, сближая производителя, ритейлера и потребителя.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="how-it-work-card how-it-work-card--full-width how-it-work-card--filled"
+              >
+                <div class="how-it-work-card__header">
+                  <span class="how-it-work-card__index">(02)</span>
+                  <div class="how-it-work-card__index-circles">
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+                <div class="how-it-work-card__text-wrapper">
+                  <h3>Человекоцентричность</h3>
+                  <p>Заботимся обо всех: от сотрудников до клиентов.</p>
+                </div>
+              </div>
+              <div
+                class="how-it-work-card how-it-work-card--full-width how-it-work-card--filled"
+              >
+                <div class="how-it-work-card__header">
+                  <span class="how-it-work-card__index">(03)</span>
+                  <div class="how-it-work-card__index-circles">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+                <div class="how-it-work-card__text-wrapper">
+                  <h3>Новаторство</h3>
+                  <p>
+                    Постоянно внедряем новые технологии для роста эффективности
+                    вашего бизнеса.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="how-it-work-card how-it-work-card--full-width how-it-work-card--filled"
+              >
+                <div class="how-it-work-card__header">
+                  <span class="how-it-work-card__index">(04)</span>
+                  <div class="how-it-work-card__index-circles">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+                <div class="how-it-work-card__text-wrapper">
+                  <h3>Партнёрство</h3>
+                  <p>
+                    Строим открытые, доверительные отношения и предлагаем
+                    индивидуальные решения для долгосрочного успеха.
+                  </p>
+                </div>
+              </div>
+              <div
+                class="how-it-work-card how-it-work-card--full-width how-it-work-card--filled"
+              >
+                <div class="how-it-work-card__header">
+                  <span class="how-it-work-card__index">(05)</span>
+                  <div class="how-it-work-card__index-circles">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                  </div>
+                </div>
+                <div class="how-it-work-card__text-wrapper">
+                  <h3>Профессионализм</h3>
+                  <p>
+                    Глубокая экспертиза, прозрачность процессов и ориентир на
+                    результат делают наш сервис лучшим на рынке.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="offers">
+        <div class="container">
+          <div class="offers__content">
+            <h2>Мы предлагаем</h2>
+            <div class="offers__grid">
+              <div class="offer">
+                <h4>Кадровый делопроизводственный аутсорсинг</h4>
+              </div>
+              <div class="offer">
+                <h4>Административное сопровождение</h4>
+              </div>
+              <div class="offer">
+                <h4>Аудит кадровых процессов</h4>
+              </div>
+              <div class="offer">
+                <h4>Ведение аналитики и предоставление отчётов</h4>
+              </div>
+            </div>
+            <div class="offers__text-wrapper">
+              <h4>Всегда к вашим услугам — команда OPEN Group!</h4>
+              <p>
+                Сфокусируйтесь на своем бизнесе, а рутину доверяйте
+                профессионалам.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+  </body>
+</html>

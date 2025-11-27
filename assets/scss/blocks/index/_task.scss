@@ -1,0 +1,42 @@
+.task {
+  overflow: hidden;
+  position: relative;
+  height: 105px;
+  width: 285.75px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  padding-left: 20px;
+
+  @media (max-width: 640px) {
+    width: 100%;
+    height: 80px;
+  }
+
+  &__number {
+    position: absolute;
+    left: -9px;
+    top: 45%;
+    transform: translateY(-50%);
+    font-family: "Geometria", sans-serif;
+    font-weight: 800;
+    font-size: 120px;
+    color: #cf20030d;
+
+    @media (max-width: 640px) {
+      font-size: 80px;
+      left: 0px;
+    }
+  }
+
+  &__text {
+    font-family: "Geometria", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 1.3;
+
+    @media (max-width: 640px) {
+      font-size: 16px;
+    }
+  }
+}

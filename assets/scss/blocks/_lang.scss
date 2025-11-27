@@ -1,0 +1,27 @@
+.lang {
+  display: inline-flex;
+
+  @media (max-width: 640px) {
+    gap: 8px;
+  }
+
+  &__link {
+    border: 1px solid map-get($colors, "dark-orange");
+    transition: 0.2s;
+    padding: 6px 12px;
+    font-size: 12px;
+    font-family: "Geometria", sans-serif;
+    font-weight: 700;
+
+    @media (max-width: 640px) {
+      padding: 2px 7px;
+      font-family: "Inter", sans-serif;
+      font-size: 16px;
+    }
+
+    &--active,
+    &:hover {
+      background-color: map-get($colors, "dark-orange");
+    }
+  }
+}

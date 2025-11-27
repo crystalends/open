@@ -1,0 +1,76 @@
+.intro {
+  background-image: url("/public/images/main-bg.png");
+  min-height: 921px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-top: 286px;
+
+  @media (max-width: 640px) {
+    padding-bottom: 46px;
+    padding-top: 138px;
+    min-height: 700px;
+  }
+
+  @media (max-width: 480px) {
+    min-height: 500px;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 120px;
+
+    @media (max-width: 640px) {
+      gap: 40px;
+    }
+  }
+
+  &__text {
+    display: flex;
+    max-width: 800px;
+    width: 100%;
+    flex-direction: column;
+    gap: 20px;
+
+    & > h2 {
+      font-family: "Inter", sans-serif;
+      font-weight: 600;
+      letter-spacing: 1.4px;
+      font-size: 45px;
+      color: map-get($colors, "white");
+
+      @media (max-width: 640px) {
+        font-size: 36px;
+        letter-spacing: 0.95px;
+      }
+
+      @media (max-width: 480px) {
+        font-size: 30px;
+        word-break: break-all;
+        letter-spacing: 0.95px;
+      }
+    }
+
+    & > p {
+      font-family: "Inter", sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      letter-spacing: 0.2px;
+      color: map-get($colors, "white");
+
+      @media (max-width: 480px) {
+        font-size: 16px;
+      }
+    }
+
+    &-wrapper {
+      display: flex;
+      flex-direction: column;
+      gap: 60px;
+
+      @media (max-width: 640px) {
+        gap: 40px;
+      }
+    }
+  }
+}

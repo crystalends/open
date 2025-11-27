@@ -1,0 +1,53 @@
+.benefit {
+  display: flex;
+  padding: 30px 97.5px;
+  gap: 100px;
+  height: 139px;
+  align-items: center;
+
+  @media (max-width: 1500px) {
+    height: fit-content;
+    padding: 20px 0px;
+  }
+
+  & > span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-family: "Geometria", sans-serif;
+    font-size: 80px;
+    width: 29px;
+    height: 62px;
+    font-weight: 800;
+    color: #0000000d;
+  }
+
+  &__text-wrapper {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+    min-height: 79px;
+    justify-content: center;
+
+    & > h3 {
+      font-family: "Geometria", sans-serif;
+      letter-spacing: -0.15px;
+      line-height: 41px;
+      font-size: 30px;
+
+      @media (max-width: 1500px) {
+        font-size: 16px;
+        line-height: inherit;
+      }
+    }
+
+    & > p {
+      font-family: "Geometria", sans-serif;
+      font-size: 20px;
+
+      @media (max-width: 1500px) {
+        font-size: 12px;
+      }
+    }
+  }
+}
