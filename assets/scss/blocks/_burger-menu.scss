@@ -1,0 +1,49 @@
+.burger-menu {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100vh;
+  visibility: hidden;
+  z-index: 99;
+  opacity: 0;
+  transition: 0.3s;
+
+  &--active {
+    visibility: visible;
+    opacity: 1;
+  }
+
+  &__overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #3f3f3f7e;
+    height: 100vh;
+    z-index: 1;
+  }
+
+  &__nav {
+    position: absolute;
+    overflow: auto;
+    top: 0;
+    right: 0;
+    width: 80%;
+    height: 100vh;
+    background-color: #3f3f3ff2;
+    backdrop-filter: blur(5px);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 80px 40px;
+    z-index: 2;
+
+    & > a {
+      font-family: "Geometria", sans-serif;
+      font-weight: 400;
+      font-size: 20px;
+      color: map-get($colors, "white");
+    }
+  }
+}

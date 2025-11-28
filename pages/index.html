@@ -3,12 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Open — Аутсорсинг кадрово-административной функции</title>
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
       href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
       rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
     />
     <link rel="stylesheet" href="../dist/style.css" />
   </head>
@@ -40,7 +44,7 @@
                   width="100"
                   height="100"
                   preserveAspectRatio="none"
-                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAyklEQVR4nO3awQnCQBiE0SXDdqHowZulp5jFihRbMB6G8B58DWRO4d8xAAAAAAAAAICfvB7jsq7zqXm477ccR63btq973srxbttukHtRBklXBklXBklXBklXBklXBsn5BvFjOLt+DAEAAAAAgL9zD5ld9xAXw3RdDA0Sg6yzZpB0ZZB0ZZB0ZZB0ZZB05aHcrMpDOQAAAAAA6OQeMrvuIS6G6boYGiQGWWfNIOnKIOnKIOnKIOnKIOnKQ7lZlYdyAAAAAAAAADB+9gFJpmlcNmfLDwAAAABJRU5ErkJggg=="
+                  xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAGQAAABkCAYAAABw4pVUAAAACXBIWXMAAAsTAAALEwEAmpwYAAAAyklEQVR4nO3awQnCQBiE0SXDdqHowZulp5jFihRbMB6G8B58DWRO4d8xAAAAAAAAAICfvB7jsu7zqXm477ccR63btq973srxbttukHtRBklXBklXBklXBklXBklXBsn5BvFjOLt+DAEAAAAAgL9zD5ld9xAXw3RdDA0Sg6yzZpB0ZZB0ZZB0ZZB0ZZB05aHcrMpDOQAAAAAA6OQeMrvuIS6G6boYGiQGWWfNIOnKIOnKIOnKIOnKIOnKQ7lZlYdyAAAAAAAAADB+9gFJpmlcNmfLDwAAAABJRU5ErkJggg=="
                 />
               </defs>
             </svg>
@@ -65,14 +69,14 @@
           <a class="lang__link text-white lang__link--active" href="">RUS</a>
         </div>
       </div>
-      <div class="header__nav">
+      <nav class="header__nav">
         <a href="">Услуги</a>
         <a href="">IT продукты</a>
         <a href="">О компании</a>
         <a href="">Карьера</a>
         <a href="">Пресс-центр</a>
         <a href="">Контакты</a>
-      </div>
+      </nav>
       <div class="header__right">
         <div class="eph">
           <a href="tel:+78005339833"
@@ -103,6 +107,17 @@
       </div>
     </header>
     <main>
+      <div class="burger-menu">
+        <div class="burger-menu__overlay"></div>
+        <nav class="burger-menu__nav">
+          <a href="">Услуги</a>
+          <a href="">IT продукты</a>
+          <a href="">О компании</a>
+          <a href="">Карьера</a>
+          <a href="">Пресс-центр</a>
+          <a href="">Контакты</a>
+        </nav>
+      </div>
       <section class="intro">
         <div class="container">
           <div class="intro__content">
@@ -611,9 +626,597 @@
                 профессионалам.
               </p>
             </div>
+            <div class="offers__form-wrapper">
+              <h3>Оставьте заявку</h3>
+              <form action="">
+                <div class="offers__form-row">
+                  <input
+                    type="text"
+                    class="input"
+                    placeholder="Название компании и имя *"
+                    required
+                  />
+                  <input
+                    type="text"
+                    class="input"
+                    placeholder="Электронная почта *"
+                    required
+                  />
+                </div>
+                <input
+                  type="text"
+                  class="input"
+                  placeholder="Телефон или мессенджер *"
+                  required
+                />
+                <textarea
+                  placeholder="Несколько слов о проекте"
+                  class="textarea"
+                ></textarea>
+                <label class="label" for="">
+                  Откуда узнали о нашей компании?
+                  <select class="select" name="" id="">
+                    <option value="Выставка или офлайн мероприятие">
+                      Выставка или офлайн мероприятие
+                    </option>
+                    <option value="Онлайн мероприятие">
+                      Онлайн мероприятие
+                    </option>
+                    <option value="Новостные каналы и/или СМИ">
+                      Новостные каналы и/или СМИ
+                    </option>
+                    <option value="Поисковый запрос">Поисковый запрос</option>
+                    <option value="Рекомендация от коллег">
+                      Рекомендация от коллег
+                    </option>
+                    <option value="Другое">Другое</option>
+                  </select>
+                </label>
+                <div class="offers__form-center-wrapper">
+                  <label class="label label--row" for="">
+                    <input type="checkbox" />
+                    Согласие на обработку персональных данных
+                  </label>
+                </div>
+                <div class="offers__form-center-wrapper">
+                  <button class="button button--middle" type="submit">
+                    Отправить
+                  </button>
+                </div>
+              </form>
+            </div>
           </div>
         </div>
       </section>
+      <section class="understanding">
+        <div class="understanding__content">
+          <h2>Работаем с полным пониманием ваших задач</h2>
+          <div class="understanding__swiper-wrapper">
+            <div class="swiper understanding__swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <img
+                    class="understanding__image"
+                    src="../assets/images/Company logo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="understanding__image"
+                    src="../assets/images/Company logo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="understanding__image"
+                    src="../assets/images/Company logo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="understanding__image"
+                    src="../assets/images/Company logo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="understanding__image"
+                    src="../assets/images/Company logo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="understanding__image"
+                    src="../assets/images/Company logo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="understanding__image"
+                    src="../assets/images/Company logo.png"
+                    alt=""
+                  />
+                </div>
+                <div class="swiper-slide">
+                  <img
+                    class="understanding__image"
+                    src="../assets/images/Company logo.png"
+                    alt=""
+                  />
+                </div>
+              </div>
+              <div class="swiper-button-prev">
+                <svg
+                  width="9"
+                  height="18"
+                  viewBox="0 0 9 18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 3 L2 9 L7 15"
+                    stroke="white"
+                    stroke-width="2"
+                    fill="none"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                  />
+                </svg>
+              </div>
+              <div class="swiper-button-next">
+                <svg
+                  width="9"
+                  height="18"
+                  viewBox="0 0 9 18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 3 L7 9 L2 15"
+                    stroke="white"
+                    stroke-width="2"
+                    fill="none"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="team">
+        <div class="team__content">
+          <h2>Команда профессионалов</h2>
+          <div class="team__swiper-wrapper">
+            <div class="swiper team__swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="team-card">
+                    <img src="../assets/images/Rectangle 2.png" alt="" />
+                    <div class="team-card__text-wrapper">
+                      <h3>Ивано Иван</h3>
+                      <p>должность</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team-card">
+                    <img src="../assets/images/Rectangle 2.png" alt="" />
+                    <div class="team-card__text-wrapper">
+                      <h3>Ивано Иван</h3>
+                      <p>должность</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team-card">
+                    <img src="../assets/images/Rectangle 2.png" alt="" />
+                    <div class="team-card__text-wrapper">
+                      <h3>Ивано Иван</h3>
+                      <p>должность</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team-card">
+                    <img src="../assets/images/Rectangle 2.png" alt="" />
+                    <div class="team-card__text-wrapper">
+                      <h3>Ивано Иван</h3>
+                      <p>должность</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team-card">
+                    <img src="../assets/images/Rectangle 2.png" alt="" />
+                    <div class="team-card__text-wrapper">
+                      <h3>Ивано Иван</h3>
+                      <p>должность</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team-card">
+                    <img src="../assets/images/Rectangle 2.png" alt="" />
+                    <div class="team-card__text-wrapper">
+                      <h3>Ивано Иван</h3>
+                      <p>должность</p>
+                    </div>
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="team-card">
+                    <img src="../assets/images/Rectangle 2.png" alt="" />
+                    <div class="team-card__text-wrapper">
+                      <h3>Ивано Иван</h3>
+                      <p>должность</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-button-prev">
+                <svg
+                  width="9"
+                  height="18"
+                  viewBox="0 0 9 18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M7 3 L2 9 L7 15"
+                    stroke="white"
+                    stroke-width="2"
+                    fill="none"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                  />
+                </svg>
+              </div>
+              <div class="swiper-button-next">
+                <svg
+                  width="9"
+                  height="18"
+                  viewBox="0 0 9 18"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M2 3 L7 9 L2 15"
+                    stroke="white"
+                    stroke-width="2"
+                    fill="none"
+                    stroke-linecap="butt"
+                    stroke-linejoin="miter"
+                  />
+                </svg>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="services">
+        <div class="container">
+          <div class="services__content">
+            <h2>Наши услуги</h2>
+            <div class="services__grid">
+              <div class="service">
+                <h3>Open Route to Market</h3>
+              </div>
+              <div class="service">
+                <h3>Маршрутизация</h3>
+              </div>
+              <div class="service">
+                <h3>Технический мерчандайзинг</h3>
+              </div>
+              <div class="service">
+                <h3>Совмещенный мерчандайзинг</h3>
+              </div>
+              <div class="service">
+                <h3>Мерчандайзинг</h3>
+              </div>
+              <div class="service">
+                <h3>Аутсорсинг продаж и промо-консультирования</h3>
+              </div>
+              <div class="service">
+                <h3>Эксклюзивный мерчандайзинг</h3>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class="questions">
+        <div class="container">
+          <div class="questions__content">
+            <div class="questions__wrapper">
+              <h2>Часто задаваемые вопросы</h2>
+              <div class="accordion">
+                <div class="accordion-item">
+                  <div class="accordion-item__header">
+                    <p>What is the return policy?</p>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6 9L12 15L18 9"
+                        stroke="#B92524"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tempore commodi quibusdam aut culpa earum magni, minima
+                    molestias et. Consectetur amet vel culpa obcaecati
+                    aspernatur laudantium velit nulla ea incidunt architecto?
+                  </p>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-item__header">
+                    <p>How do I track my order?</p>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6 9L12 15L18 9"
+                        stroke="#B92524"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tempore commodi quibusdam aut culpa earum magni, minima
+                    molestias et. Consectetur amet vel culpa obcaecati
+                    aspernatur laudantium velit nulla ea incidunt architecto?
+                  </p>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-item__header">
+                    <p>Can I change my shipping address?</p>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6 9L12 15L18 9"
+                        stroke="#B92524"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tempore commodi quibusdam aut culpa earum magni, minima
+                    molestias et. Consectetur amet vel culpa obcaecati
+                    aspernatur laudantium velit nulla ea incidunt architecto?
+                  </p>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-item__header">
+                    <p>What payment methods are accepted?</p>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6 9L12 15L18 9"
+                        stroke="#B92524"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tempore commodi quibusdam aut culpa earum magni, minima
+                    molestias et. Consectetur amet vel culpa obcaecati
+                    aspernatur laudantium velit nulla ea incidunt architecto?
+                  </p>
+                </div>
+                <div class="accordion-item">
+                  <div class="accordion-item__header">
+                    <p>How do I contact customer support?</p>
+                    <svg
+                      width="24"
+                      height="24"
+                      viewBox="0 0 24 24"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        d="M6 9L12 15L18 9"
+                        stroke="#B92524"
+                        stroke-width="1.5"
+                        stroke-linecap="round"
+                        stroke-linejoin="round"
+                      />
+                    </svg>
+                  </div>
+                  <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit.
+                    Tempore commodi quibusdam aut culpa earum magni, minima
+                    molestias et. Consectetur amet vel culpa obcaecati
+                    aspernatur laudantium velit nulla ea incidunt architecto?
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="questions__end"></div>
+      </section>
     </main>
+    <footer class="footer">
+      <div class="container">
+        <div class="footer__content">
+          <div class="footer__info">
+            <div class="footer__general">
+              <a href="">
+                <svg
+                  width="99.99"
+                  height="39.5"
+                  viewBox="0 0 58 23"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <path
+                    d="M15.66 6.27899C15.8588 2.77292 18.8383 3.10947e-06 22.4831 3.10947e-06C26.2668 3.10947e-06 29.3258 2.9756 29.3258 6.65567C29.3258 10.3266 26.2668 13.3113 22.4831 13.3113C21.5088 13.3146 20.5448 13.1115 19.6546 12.7153C18.7645 12.3191 17.9683 11.7389 17.3185 11.0128V16.9438H15.6405V6.27899H15.66ZM22.4831 1.65203C19.6431 1.65203 17.3387 3.89317 17.3387 6.65567C17.3387 9.41881 19.6431 11.66 22.4831 11.66C25.3232 11.66 27.6276 9.41816 27.6276 6.65567C27.6276 3.89252 25.3232 1.65203 22.4831 1.65203ZM43.7385 9.61367C42.7349 11.8776 40.5505 13.4964 37.9581 13.6756H37.9385C37.7899 13.6854 37.6407 13.6854 37.4823 13.6854C36.538 13.6854 35.6348 13.4964 34.8104 13.1491L34.8007 13.1393C34.7609 13.1295 34.7309 13.1093 34.6912 13.0995C32.2975 12.0269 30.6292 9.63322 30.6292 6.8427C30.6284 5.94386 30.8048 5.05368 31.1483 4.2231C31.4919 3.39252 31.9959 2.63784 32.6315 2.00227C33.2671 1.3667 34.0217 0.8627 34.8523 0.519126C35.6829 0.175552 36.5731 -0.000854151 37.4719 3.10947e-06C41.2458 3.10947e-06 44.3146 3.05901 44.3146 6.8427C44.3146 7.01214 44.3048 7.19005 44.2951 7.35883L44.2651 7.65731C40.312 7.65731 36.3497 7.64688 32.3868 7.64688C32.6253 9.19659 33.5592 10.4974 34.8404 11.2624C34.9193 11.312 34.9988 11.3615 35.0783 11.4012L35.1382 11.4312H35.148C35.8674 11.7987 36.6641 11.9893 37.4719 11.9871H37.6309L37.8988 11.9773C39.8056 11.8281 41.4244 10.6264 42.1797 8.95807L43.7385 9.61367ZM42.5466 5.97856C42.3413 4.78126 41.7194 3.69506 40.7908 2.91184C39.8622 2.12862 38.6867 1.6988 37.4719 1.6983C34.9499 1.6983 32.8039 3.52562 32.3972 5.97856H42.5466ZM48.5232 3.10947e-06L56.4079 10.4113V3.10947e-06H58V13.0337H56.4079V13.0239L48.5225 2.62304V13.0337H46.9214V3.10947e-06H48.5232ZM23.1674 21.3362C20.5662 22.3117 17.8105 22.8106 15.0324 22.809C12.2204 22.809 9.43706 22.302 6.81011 21.3069L6.51686 21.1896L7.14247 19.5506L7.43508 19.6679C9.86325 20.584 12.4372 21.0532 15.0324 21.0527C17.6014 21.0527 20.1501 20.5946 22.5529 19.6874L22.8455 19.5799L23.4607 21.2189L23.1674 21.3362ZM6.8427 3.10947e-06C10.6166 3.10947e-06 13.6854 3.05901 13.6854 6.8427C13.6854 10.6166 10.6166 13.6854 6.8427 13.6854C3.05901 13.6854 3.10947e-06 10.6166 3.10947e-06 6.8427C-0.000854151 5.94386 0.175552 5.05368 0.519126 4.2231C0.8627 3.39252 1.3667 2.63784 2.00227 2.00227C2.63784 1.3667 3.39252 0.8627 4.2231 0.519126C5.05368 0.175552 5.94386 -0.000854151 6.8427 3.10947e-06ZM6.8427 1.6983C5.47842 1.69864 4.17013 2.24075 3.20544 3.20544C2.24075 4.17013 1.69864 5.47842 1.6983 6.8427C1.69864 8.20697 2.24075 9.51527 3.20544 10.48C4.17013 11.4446 5.47842 11.9868 6.8427 11.9871C8.20697 11.9868 9.51527 11.4446 10.48 10.48C11.4446 9.51527 11.9868 8.20697 11.9871 6.8427C11.9868 5.47842 11.4446 4.17013 10.48 3.20544C9.51527 2.24075 8.20697 1.69864 6.8427 1.6983Z"
+                    fill="white"
+                  />
+                </svg>
+              </a>
+              <div class="footer__description">
+                Все права защищены <br />ООО ОУПЕН Мск
+              </div>
+            </div>
+            <div class="footer__images-wrapper">
+              <img src="../assets/images/forbs.png" alt="" />
+              <img src="../assets/images/rbk.png" alt="" />
+            </div>
+          </div>
+          <div class="footer__menu">
+            <div class="footer__links-list">
+              <a href="">Услуги</a>
+              <a href="">Open Route to market</a>
+              <a href="">Маршрутизация</a>
+              <a href="">Технический мерчандайзинг</a>
+              <a href="">Совмещенный мерчандайзинг</a>
+              <a href="">Мерчандайзинг</a>
+              <a href="">Аутсорсинг продаж</a>
+              <a href="">Кадровое администрирование</a>
+              <a href="">Аутсорсинг офисного персонала</a>
+              <a href="">Эксклюзивный мерчандайзинг</a>
+            </div>
+            <div class="footer__links-list">
+              <a href="">IT продукты</a>
+              <a href="">SFA</a>
+              <a href="">Image Recognition</a>
+              <a href="">Open Skills</a>
+              <a href="">Instant merch</a>
+            </div>
+            <div class="footer__links-list">
+              <a href="">Пресс-центр</a>
+              <a href="">Новости</a>
+              <a href="">Видео</a>
+              <a href="">Статьи</a>
+              <a href="">Подкасты</a>
+              <a href="">Наша экспертиза</a>
+            </div>
+            <div class="footer__links-list">
+              <a href="">Карьера</a>
+              <a href="">Торговый персонал</a>
+              <a href="">Работа в офисе</a>
+              <a href="">IT</a>
+            </div>
+          </div>
+          <div class="footer__feedback">
+            <div class="footer__contacts">
+              <a href="tel:+74996490080">+7 (499) 649 00 80</a>
+              <a href="mailto:info@open-com.ru" class="footer__link"
+                >info@open-com.ru</a
+              >
+              <a href="/upload/human_rights_policy.pdf" target="_blank"
+                >Политика в области прав человека</a
+              >
+              <a href="/upload/OPEN_MSK_ISO_9001_SERT.pdf" target="_blank"
+                >Сертификат менеджмента качества ISO 9001</a
+              >
+            </div>
+            <div class="footer__socials">
+              <a href="https://t.me/+Ij0AkZnJ3a05MGRi"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  id="Bold"
+                  enable-background="new 0 0 24 24"
+                  height="18"
+                  viewBox="0 0 24 24"
+                  width="18"
+                  fill="#fff"
+                >
+                  <path
+                    d="m9.417 15.181-.397 5.584c.568 0 .814-.244 1.109-.537l2.663-2.545 5.518 4.041c1.012.564 1.725.267   1.998-.931l3.622-16.972.001-.001c.321-1.496-.541-2.081-1.527-1.714l-21.29 8.151c-1.453.564-1.431 1.374-.247  1.741l5.443 1.693 12.643-7.911c.595-.394 1.136-.176.691.218z"
+                  /></svg
+              ></a>
+              <a href="https://vk.com/open_company"
+                ><svg
+                  xmlns="http://www.w3.org/2000/svg"
+                  width="18"
+                  height="18"
+                  viewBox="0 0 48 30"
+                  fill="none"
+                >
+                  <path
+                    d="M47.874 2.082C47.966 1.78 48.01 1.5 47.998 1.25C47.968 0.526 47.47 0 46.298 0H41.062C39.74 0 39.13 0.799999 38.774 1.602C38.774 1.602 35.51 8.32 31.748 12.75C30.528 14.032 29.908 14 29.248 14C28.894 14 28 13.572 28 12.398V2.028C28 0.64 27.654 0 26.536 0H17.238C16.424 0 16 0.64 16 1.282C16 2.616 17.796 2.936 18 6.674V13.92C18 15.68 17.694 16 17.034 16C15.254 16 11.75 10 9.404 2.136C8.896 0.588 8.388 0 7.066 0H1.78C0.254001 0 0 0.748 0 1.548C0 2.99 1.2 10.786 7.75 19.75C12.5 26.25 18.758 30 24.298 30C27.654 30 27.998 29.146 27.998 27.812V21.868C28 20.266 28.366 20 29.434 20C30.196 20 31.75 20.5 34.75 24C38.21 28.036 38.838 30 40.822 30H46.058C47.274 30 47.972 29.49 48 28.5C48.006 28.248 47.97 27.966 47.888 27.652C47.5 26.5 45.72 23.684 43.5 21C42.27 19.514 41.056 18.042 40.498 17.242C40.124 16.72 39.982 16.352 40 16C40.018 15.63 40.21 15.278 40.498 14.786C40.446 14.786 47.214 5.284 47.874 2.082Z"
+                    fill="white"
+                  /></svg
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <script src="../dist/script.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const understandingSwiper = new Swiper(".understanding__swiper", {
+        slidesPerView: "auto",
+        spaceBetween: 40,
+        breakpoints: {
+          1500: {
+            spaceBetween: 20,
+          },
+          480: {
+            spaceBetween: 10,
+          },
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+
+      const teamSwiper = new Swiper(".team__swiper", {
+        slidesPerView: "auto",
+        spaceBetween: 56,
+        breakpoints: {
+          1500: {
+            spaceBetween: 20,
+          },
+          480: {
+            spaceBetween: 10,
+          },
+        },
+
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
   </body>
 </html>

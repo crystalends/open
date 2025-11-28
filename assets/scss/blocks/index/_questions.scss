@@ -1,0 +1,50 @@
+.questions {
+  padding: 84px 0;
+
+  @media (max-width: 640px) {
+    padding: 42px 0;
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    gap: 56px;
+
+    @media (max-width: 640px) {
+      gap: 28px;
+    }
+  }
+
+  &__wrapper {
+    padding: 42px 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    gap: 10px;
+
+    @media (max-width: 640px) {
+      flex-direction: column;
+      gap: 28px;
+      padding: 0;
+    }
+
+    & > h2 {
+      max-width: 512px;
+      font-family: "Geometria", sans-serif;
+      font-weight: 500;
+      font-size: 40px;
+      color: map-get($colors, "so-dark-orange");
+
+      @media (max-width: 1500px) {
+        font-size: 24px;
+      }
+    }
+  }
+
+  &__end {
+    max-width: 1396px;
+    margin: 0 auto;
+    width: 100%;
+    border-bottom: 1.5px solid #00000029;
+  }
+}

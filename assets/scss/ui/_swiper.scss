@@ -1,0 +1,39 @@
+.swiper {
+  &-slide {
+    border: 1px solid map-get($colors, "light-gray");
+    width: fit-content;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  &-button {
+    &-next,
+    &-prev {
+      width: 40px;
+      height: 40px;
+      background-color: map-get($colors, "so-dark-orange");
+      transition: 0.3s;
+
+      &:hover {
+        background-color: map-get($colors, "orange");
+      }
+
+      &::after {
+        content: "";
+      }
+    }
+
+    &-disabled {
+      background-color: transparent;
+      border: 1px solid #b9252433;
+
+      & > svg {
+        path {
+          stroke: #b9252433;
+        }
+      }
+    }
+  }
+}

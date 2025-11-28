@@ -18,6 +18,10 @@
       font-weight: 500;
       font-size: 40px;
       color: map-get($colors, "so-dark-orange");
+
+      @media (max-width: 1500px) {
+        font-size: 24px;
+      }
     }
   }
 
@@ -50,5 +54,47 @@
       font-family: "Geometria", sans-serif;
       font-size: 20px;
     }
+  }
+
+  &__form-wrapper {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
+    border: 2px solid map-get($colors, "white");
+    padding: 40px 135px;
+
+    @media (max-width: 1500px) {
+      padding: 40px 20px;
+    }
+
+    & > h3 {
+      text-align: center;
+      font-family: "Geometria", sans-serif;
+      font-weight: 700;
+      font-size: 24px;
+    }
+
+    & > form {
+      display: flex;
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+
+  &__form-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 50px;
+
+    @media (max-width: 1500px) {
+      flex-direction: column;
+      gap: 30px;
+    }
+  }
+
+  &__form-center-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }

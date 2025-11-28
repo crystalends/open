@@ -10,6 +10,19 @@
   height: 50px;
   transition: 0.2s;
 
+  &--middle {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 17px;
+    text-align: center;
+    letter-spacing: 0.17px;
+    color: #ffffff;
+    padding: 20px 75px;
+    height: fit-content;
+    width: fit-content;
+    cursor: pointer;
+  }
+
   &--small {
     width: 260px;
     text-transform: uppercase;

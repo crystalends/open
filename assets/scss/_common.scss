@@ -36,3 +36,7 @@ a:active {
 .text-white {
   color: map-get($colors, "white");
 }
+
+img {
+  max-width: 100%;
+}

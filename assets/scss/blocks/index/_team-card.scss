@@ -1,0 +1,21 @@
+.team-card {
+  padding: 1px solid map-get($colors, "light-gray");
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+
+  &__text-wrapper {
+    & > h3 {
+      font-family: "Geometria", sans-serif;
+      font-size: 20px;
+    }
+
+    & > p {
+      font-family: "Geometria", sans-serif;
+      font-size: 16px;
+      color: #00000099;
+      text-transform: lowercase;
+    }
+  }
+}

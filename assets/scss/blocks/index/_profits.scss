@@ -47,6 +47,16 @@
       justify-content: end;
       grid-template-columns: repeat(2, 1fr);
     }
+
+    @media (max-width: 480px) {
+      display: flex;
+      overflow: auto;
+      justify-content: inherit;
+
+      & > div {
+        flex-shrink: 0;
+      }
+    }
   }
 
   &__bid {
@@ -65,6 +75,15 @@
       &--mobile {
         display: flex;
         justify-content: end;
+      }
+    }
+
+    @media (max-width: 480px) {
+      display: flex;
+      gap: 20px;
+
+      &--mobile {
+        display: none;
       }
     }
 

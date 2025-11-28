@@ -17,13 +17,13 @@
   }
 
   @media (max-width: 1500px) {
+    min-height: 176px;
     width: 100%;
     gap: 28px;
   }
 
-  @media (max-width: 1500px) {
+  @media (max-width: 480px) {
     min-width: 256px;
-    min-height: 176px;
   }
 
   &__header {
