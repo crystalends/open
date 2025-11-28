@@ -218,6 +218,7 @@ img {
   .header__left {
     width: 100%;
     max-width: 440px;
+    flex-wrap: wrap;
     justify-content: space-between;
   }
 }
