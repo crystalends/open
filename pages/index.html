@@ -1185,13 +1185,12 @@
       const understandingSwiper = new Swiper(".understanding__swiper", {
         slidesPerView: "auto",
         spaceBetween: 40,
+        centeredSlides: true,
+        centeredSlidesBounds: true,
+
         breakpoints: {
-          1500: {
-            spaceBetween: 20,
-          },
-          480: {
-            spaceBetween: 10,
-          },
+          1500: { spaceBetween: 20 },
+          480: { spaceBetween: 10 },
         },
 
         navigation: {
@@ -1203,13 +1202,12 @@
       const teamSwiper = new Swiper(".team__swiper", {
         slidesPerView: "auto",
         spaceBetween: 56,
+        centeredSlides: true,
+        centeredSlidesBounds: true,
+
         breakpoints: {
-          1500: {
-            spaceBetween: 20,
-          },
-          480: {
-            spaceBetween: 10,
-          },
+          1500: { spaceBetween: 20 },
+          480: { spaceBetween: 10 },
         },
 
         navigation: {
